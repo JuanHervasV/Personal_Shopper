@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MontoProducto">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/carnasbold"
+        android:text="registro producto" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/carnasbold"
+        android:layout_marginTop="32dp"
+        android:text="depósito del cliente" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="46dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="monto depositado" />
+
+    <EditText
+        android:id="@+id/montodeposito"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:hint="101.01"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_marginStart="70dp"
+        android:fontFamily="@font/carnasthin"
+        android:textSize="15dp"
+        android:text="medio pago" />
+
+    <EditText
+        android:id="@+id/mediopago"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@+id/nombre"
+        android:layout_marginStart="70dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="BCP"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_below="@id/montodeposito"
+        android:fontFamily="@font/carnasthin"
+        android:layout_marginTop="30dp"
+        android:text="código de pago" />
+
+
+    <EditText
+        android:id="@+id/codigopago"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="59804578"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mediopago"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/carnasthin"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="90dp"
+        android:textSize="15dp"
+        android:text="dev. pendiente" />
+
+    <EditText
+        android:id="@+id/devolucion"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="105.5"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/genero"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codigopago"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/carnasthin"
+        android:textSize="15dp"
+        android:text="observaciones" />
+
+    <EditText
+        android:id="@+id/observaciones"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/carnasthin"
+        android:hint="se acordó pagar la devolución el 15/06" />
+
+    <Button
+        android:id="@+id/btnregistro"
+        android:layout_below="@id/observaciones"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_cornersscharff"
+        android:fontFamily="@font/carnasbold"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text="registrar producto" />
+
+</RelativeLayout>

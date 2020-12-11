@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Shopper"
+        android:fontFamily="@font/carnasbold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        />
+
+    <Button
+        android:id="@+id/regcliente"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:layout_below="@id/bienvenida"
+        android:text="Registrar Cliente"
+        android:fontFamily="@font/carnasbold"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_cornersscharff"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/regproducto"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regcliente"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="120dp"
+        android:text="Registrar Producto"
+        android:fontFamily="@font/carnasbold"
+        android:background="@drawable/rounded_cornersscharff"
+        android:onClick="onClick"/>
+</RelativeLayout>

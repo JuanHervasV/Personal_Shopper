@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegProducto">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/carnasbold"
+        android:text="elegir cliente" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/carnasbold"
+        android:layout_marginTop="32dp"
+        android:text="seleccione al cliente:" />
+
+    <EditText
+        android:id="@+id/cliente"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:hint="Carlos"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        />
+
+    <ListView
+        android:id="@+id/listacliente"
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+        android:layout_below="@+id/cliente"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_cornersscharff"
+        android:layout_marginEnd="44dp" />
+
+    <Button
+        android:id="@+id/btnenvios"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listacliente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_cornersscharff"
+        android:fontFamily="@font/carnasbold"
+        android:text="datos de envío >"
+        android:onClick="onClick"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

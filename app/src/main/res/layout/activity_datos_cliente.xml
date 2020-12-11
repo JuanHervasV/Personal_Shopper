@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosCliente">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/carnasbold"
+        android:text="dirección cliente"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="dirección"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/carnasthin"
+        android:hint="Urbanización Rosales 169 Lote 17" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_below="@id/direccion"
+        android:layout_marginTop="30dp"
+        android:text="distrito" />
+
+
+    <EditText
+        android:id="@+id/distrito"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="5dp"
+        android:hint="Lima"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direccion"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginStart="128dp"
+        android:textSize="15dp"
+        android:text="provincia" />
+
+    <EditText
+        android:id="@+id/provincia"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView6"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="Lima"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/distrito"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distrito"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:text="departamento" />
+
+    <EditText
+        android:id="@+id/departamento"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/carnasthin"
+        android:hint="Lima"
+        android:background="@drawable/rounded_corners"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_below="@id/departamento"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_cornersscharff"
+        android:fontFamily="@font/carnasbold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="registrar cliente" />
+
+
+
+</RelativeLayout>

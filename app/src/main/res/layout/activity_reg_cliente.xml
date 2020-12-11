@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegCliente">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/carnasbold"
+        android:text="registrar cliente" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/carnasbold"
+        android:layout_marginTop="32dp"
+        android:text="datos personales" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="46dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="nombre" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:hint="Julian"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="107dp"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/carnasthin"
+        android:textSize="15dp"
+        android:text="apellido" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/nombre"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="Perez"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_below="@id/nombre"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="género" />
+
+
+    <Spinner
+        android:id="@+id/genero"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apellido"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginStart="120dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="dni" />
+
+    <EditText
+        android:id="@+id/dni"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView6"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="89765432"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/genero"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genero"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="celular" />
+
+    <EditText
+        android:id="@+id/celular"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/carnasthin"
+        android:hint="921735915"
+        android:background="@drawable/rounded_corners"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dni"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="107dp"
+        android:layout_toEndOf="@id/textView7"
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="e-mail" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView8"
+        android:layout_toEndOf="@id/celular"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="hola@gmail.com"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnEnvio"
+        android:layout_below="@id/celular"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_cornersscharff"
+        android:fontFamily="@font/carnasbold"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="datos de envío >" />
+
+</RelativeLayout>

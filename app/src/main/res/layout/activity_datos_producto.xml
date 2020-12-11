@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosProducto">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/carnasbold"
+        android:text="registrar producto" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/carnasbold"
+        android:layout_marginTop="32dp"
+        android:text="datos del producto" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="46dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="producto" />
+
+    <EditText
+        android:id="@+id/producto"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:hint="camisa"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="107dp"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/carnasthin"
+        android:textSize="15dp"
+        android:text="tienda" />
+
+    <EditText
+        android:id="@+id/tienda"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@+id/nombre"
+        android:layout_marginStart="70dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="paris"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_below="@id/producto"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="tipo de pago" />
+
+
+    <Spinner
+        android:id="@+id/pagotipo"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tienda"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="95dp"
+        android:fontFamily="@font/carnasthin"
+        android:textSize="15dp"
+        android:text="N° boleta/factura" />
+
+    <EditText
+        android:id="@+id/pagonum"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/carnasthin"
+        android:background="@drawable/rounded_corners"
+        android:hint="09290829"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/genero"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pagotipo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/carnasthin"
+        android:text="valor del producto" />
+
+    <EditText
+        android:id="@+id/valorproducto"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/carnasthin"
+        android:hint="35.5"
+        android:background="@drawable/rounded_corners"
+        />
+
+    <Button
+        android:id="@+id/btnenv"
+        android:layout_below="@id/valorproducto"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_cornersscharff"
+        android:fontFamily="@font/carnasbold"
+        android:onClick="onClick"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="envío >" />
+
+</RelativeLayout>
